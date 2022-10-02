@@ -1,56 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import List from './Companents/List';
+import { Reminder } from './features/reminder/Reminder';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div className="App pt-4">
+      {/* <div className="container">
+        <h5>Reminder Pro</h5>
+        <hr></hr>
+        <form className="d-flex">
+          <div className="col">
+            <div className="mb-3">
+              <label htmlFor="" className="form-label">Inline Form</label>
+              <div className='d-flex flex-row gap-3'>
+                <input name="" className="form-control" placeholder="" aria-describedby="helpId" />
+                <button type="button" name="" className="btn btn-primary">Ekle!</button>
+              </div>
+              <small id="helpId" className="text-muted">Help text</small>
+            </div>
+          </div>
+        </form>
+      </div> */}
+
+      <div className='container'>
+        <div className='row'>
+          <Reminder />
+          <List />
+        </div>
+      </div>
     </div>
   );
 }

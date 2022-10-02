@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import reminderReduces from '../features/reminder/addReminder'
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
-});
+export default configureStore ({
+    reducer: {
+        reminderAdder: reminderReduces,
+    }
+})
