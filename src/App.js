@@ -22,7 +22,7 @@ function App() {
           </div>
         </form>
       </div> */}
-
+      <div style={{textAlign:"center", marginBottom:"30px"}}><h1><b>Redux</b></h1></div>
       <div className='container'>
         <div className='row'>
           <Reminder />
